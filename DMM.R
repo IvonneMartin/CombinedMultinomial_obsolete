@@ -1,11 +1,11 @@
 rm(list=ls())
 
 ########################################################################################################
-##	                Dirichlet - multinomial mixed regression model                                  ##
-##   						2018 - 08 - 20			                              	##
+##	                Dirichlet - multinomial mixed regression model                                ##
+##   						2018 - 08 - 20			                      ##
 ########################################################################################################
 
-# libraries ---------------------------------------------------------------
+# libraries --------------------------------------------------------------------------------------------
 library(HMP)
 library(ecoreg)
 
@@ -37,7 +37,7 @@ Loglik <- function(params){
 res <- sum(log(L))	
 return(res)}
 
-# The marginal distribution for the multivariate count ------------ -----------------------------------
+# The marginal distribution for the multivariate count ------------ -------------------------------------
 
 CNB <- function(Ct,g){
 	gs <- sum(g)
@@ -60,7 +60,7 @@ return(est)
 }
 
 
-# Comnputing the Adaptive Gauss-Hermite Quadrature approximation --------------------------------------------------------------------
+# Comnputing the Adaptive Gauss-Hermite Quadrature approximation ----------------------------------------------------------
 evalAGHQ <- function(i,G,overdisp,sigma.u,Y,f,l,N,T,Q){
  rpt <- seq(i,l,by = N)
 	
