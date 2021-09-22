@@ -1,4 +1,1 @@
-# CombinedMultinomial
-R implementation of the mixed model in overdispersed compositional data
-
-Microbiome data has several features that need to be accounted in the model. It has a compositional structure that it comprises multiple taxa in which the relative abundance of each taxa sums up to unity. As a consequence, each taxa are correlated. Moreover, due to individual and sampling variability, microbiome is almost always observed with overdispersion (variation is larger than presumed by the parametric distribution). In addition, collecting the microbiome data over a course of repeated-measurement or within a cluster will induce a correlation structure between observations. We have developed a mixed model for the repeated-measurement multivariate count data. Specifically, we focus on the Dirichlet - multinomial mixed model which capture the overdispersion, compositional data and correlation between repeated measurement.
+This repository is now obsolete. Please refer to the https://github.com/IvonneMartin/CombinedMultinomial for the current and updated version.
